@@ -4,9 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ポートフォリオ</title>
+    <title>Portfolio</title>
+    <link rel="icon" href="img/icons8.png" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a href="https://nikya198.github.io/web-app/">トップページへ</a>
+    <header id="header">
+      <h1 class="site-title">
+        <img
+          src="img/mountain.png"
+          height="32"
+          width="32"
+          viewBox="0 0 80 80"
+          fill="none"
+        />
+        My Portfolio
+      </h1>
+      <nav>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works"> Personal Development</a></li>
+        <li><a href="#Photos">Photos</a></li>
+      </nav>
+    </header>
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg" />
+          <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト" />
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+
+        <p>Ikuya Omura</p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+            ></path>
+          </svg>
+          Japan, Tokyo
+        </p>
+        <br />
+        <p>個人で開発したものを主にアップしています。</p>
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Personal Development</h2>
+        <ul>
+          <li>
+            都道府県別の総人口推移グラフ
+            <a href="https://nikya198.github.io/population-by-prefecture/">
+              <img
+                src="img/population-by-prefecture.png"
+                alt="テキストテキストテキスト"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2023 My Portfolio</p>
+    </footer>
   </body>
 </html>
