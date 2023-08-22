@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
-    <link rel="icon" href="img/icons8.png" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2033c2e04f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header id="header">
-      <h1 class="site-title">
-        <img
-          src="img/mountain.png"
-          height="32"
-          width="32"
-          viewBox="0 0 80 80"
-          fill="none"
-        />
-        My Portfolio
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works"> Personal Development</a></li>
-          <!--<li><a href="#Photos">Photos</a></li>-->
-        </ul>
-      </nav>
-    </header>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <header class="py-3 mb-4"></header>
+
     <main>
-      <div id="mainvisual">
-        <picture>
-          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg" />
-          <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト" />
-        </picture>
-      </div>
-
-      <section id="about" class="wrapper">
-        <h2 class="sec-title">About</h2>
-
-        <p>Ikuya Omura</p>
-        <p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-geo-alt-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-            ></path>
-          </svg>
-          Japan, Tokyo
-        </p>
-        <br />
-        <p>個人で開発したものを主にアップしています。フロントエンドの技術に興味があります。</p>
+      <section id="about">
+        <div
+          class="py-3 text-center container shadow p-3 mb-5 bg-white rounded border"
+        >
+          <img
+            src="img/mountain.png"
+            class="mt-3 rounded-circle shadow mb-1 bg-white rounded border"
+            width="120"
+            height="120"
+          />
+          <div class="row py-lg-3">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="font-weight-light mb-3 font-weight-bold">Portfolio</h1>
+              <p>Ikuya Omura</p>
+              <p>個人で開発したものを主にアップしています。</p>
+              <p>フロントエンドの技術に興味があります。</p>
+              <a href="https://github.com/nikya198" class="btn"
+                ><i class="fa-brands fa-github fa-2x" style="color: #898b90"></i
+              ></a>
+              <a
+                href="mailto:ikuyaman198@gmail.com"
+                class="btn"
+                aria-label="email"
+              >
+                <i
+                  class="fa-solid fa-envelope fa-2x"
+                  style="color: #898b90"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="works" class="wrapper">
-        <h2 class="sec-title">Personal Development</h2>
-        <ul>
-          <li>
-            都道府県別の総人口推移グラフ
-            <a href="https://nikya198.github.io/population-by-prefecture/">
-              <img
-                src="img/population-by-prefecture.png"
-                alt="テキストテキストテキスト"
-            /></a>
-          </li>
-        </ul>
+      <section id="Personal Development">
+        <div class="container my-4">
+          <h2 class="font-weight-bold mb-4">Personal Development</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <a href="https://nikya198.github.io/population-by-prefecture/">
+                  <img
+                    src="img/population-by-prefecture.png"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">都道府県別の総人口推移グラフ</h5>
+                  <p class="card-text">・react・TypeScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer id="footer">
-      <p>&copy; 2023 My Portfolio</p>
-    </footer>
   </body>
 </html>
